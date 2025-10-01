@@ -19,7 +19,9 @@
 
     <!-- Modules -->
     <modules>
-        <!-- We'll add module entries here soon -->
+        <!-- Shared Kernel -->
+        <module>shared-kernel</module>
+
         <module>gymmate-app</module>
     </modules>
 
@@ -33,6 +35,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
