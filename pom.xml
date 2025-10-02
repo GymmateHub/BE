@@ -37,7 +37,14 @@
     <modules>
         <!-- Shared Kernel -->
         <module>shared-kernel</module>
-
+        
+        <!-- Domain Modules -->
+        <module>gym-core</module>
+        <module>notification</module>
+        <module>payment</module>
+        <module>reporting</module>
+        
+        <!-- Main Application -->
         <module>gymmate-app</module>
     </modules>
 
@@ -48,6 +55,30 @@
             <dependency>
                 <groupId>com.gymmate</groupId>
                 <artifactId>shared-kernel</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>com.gymmate</groupId>
+                <artifactId>gym-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>com.gymmate</groupId>
+                <artifactId>notification</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>com.gymmate</groupId>
+                <artifactId>payment</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>com.gymmate</groupId>
+                <artifactId>reporting</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
